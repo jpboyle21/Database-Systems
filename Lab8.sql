@@ -36,7 +36,6 @@ primary key(aid)
 
 -- Movies --
 CREATE TABLE Movies (
-  name  text,
   mid		char(10) not null,
   title		text,	
   yearreleased	date,
@@ -49,10 +48,9 @@ primary key(mid)
 
 
 -- Production --
-CREATE TABLE Production (
+CREATE TABLE ProductionTeam (
     name text,
     pid char(10) not null,
-    mid char (10) not null,
     aid char (10) not null,
     position  text,
 primary key (pid,mid, position)
