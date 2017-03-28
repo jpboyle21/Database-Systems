@@ -50,10 +50,11 @@ primary key(mid)
 -- Production --
 CREATE TABLE ProductionTeam (
     name text,
-    pid char(10) not null,
-    aid char (10) not null,
     position  text,
-primary key (pid,mid, position)
+    Pid char(10) not null,
+    aid char(10) not null,
+    did char(10) not null,
+primary key (pid,aid, did, position)
 );
 
 -- Part 3 in PDF --
